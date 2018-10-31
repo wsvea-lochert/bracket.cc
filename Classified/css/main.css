@@ -1,0 +1,46 @@
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color:#0277bd;
+    background-position: center;
+  }
+
+header{
+    background: url("../img/bg.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 1100px;
+}
+
+#welcome{
+    font-size: 1.3em;
+}
+
+#start{
+    margin-top: 30%;
+}
+
+#whatsNew{
+    padding-bottom: 3em;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.parallax-container{
+    height: 800px;
+}
+
+@media screen and (max-width: 690px){
+    
+    header{
+    min-height: 500px;
+    }
+
+    #start{
+        margin-top: 7%;
+    }
+}
+
