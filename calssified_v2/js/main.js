@@ -35,21 +35,6 @@
               promise.catch(e => console.log(e.message))
             });
     
-            //add signUp event
-    
-            btnSignUp.addEventListener('click', e => {
-              //get email and password 
-    
-              // TODO: CHECK for real email
-              const email = txtEmail.value;
-              const password = txtPassword.value;
-              const auth = firebase.auth();
-    
-              //sign In
-              const promise = auth.createUserWithEmailAndPassword(email, password);
-              promise.catch(e => console.log(e.message))
-            });
-    
             //sign out
             btnSignOut.addEventListener('click', e =>{
                 firebase.auth().signOut();
